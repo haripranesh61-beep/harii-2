@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: #00000080;
+    animation: zoomPan 20s ease-in-out infinite alternate;
+    /*animation: bgChange 10s infinite alternate ease-in-out;*/
+}
+
+@keyframes zoomPan {
+  0% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 110%;
+    background-position: top;
+  }
+  100% {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+/* Animation changes the background image smoothly 
+@keyframes bgChange {
+    0% {
+        background-image: url(img7.jpg);
+    }
+    50% {
+        background-image: url(img8.jpg);
+    }
+    100% {
+        background-image: url(img9.jpg);
+    }
+}*/
+
+
+.Container{
+    display: flex;
+    width: 400px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    min-height: 50vh;
+    border: 2px solid #ffffff33;
+    box-shadow: 0 0 10px #0000001a;
+    backdrop-filter: blur(20px);
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.input-box{
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+label{
+    width: 40%;
+    text-align:left;
+    margin-right: 20px;
+    padding: 8px;
+    color: #fff;
+
+}
+
+input{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.input-box input{
+    height: 85%;
+    width: 85%;
+    background: transparent;
+    border: 2px solid rgb(100, 97, 97);
+    outline: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color:#fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between male and female */
+  color: #fff;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between circle and text */
+}
+
+.gender-options input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  accent-color: brown; /* optional color */
+  cursor: pointer;
+}
+
+select{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px 15px 10px 20px;
+    border: 2px solid #ffffff33;
+    box-shadow: 0 0 10px #0000001a;
+    backdrop-filter: blur(20px);
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    cursor: pointer;
+    
+}
+
+select:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+option{
+    padding: 10px 25px 10px 25px;
+    text-align: left;
+    
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color:#fff;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px #0000001a;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:hover{
+    background-color:gray;
+    color: white;
+}
+
+input[type="file"] {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Optional – remove the default "No file chosen" text look */
+input[type="file"]::file-selector-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}

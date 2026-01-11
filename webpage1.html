@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Webpage1</title>
+    </head>
+    <body>
+        <div class="Container">
+            <form action="form.html" method="get">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" pattern="[A-Za-z]{3,30}" required>
+                    <i class="fa-solid fa-user"></i>	
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" pattern=".{6,}">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="remember">
+                    <label for="check">
+                        <input type="checkbox" id="check">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button>Login</button>
+                <div class="Create">
+                    <p>Don’t have an account?<a href="https://accounts.google.com/lifecycle/steps/signup/name?authuser=0&continue=https://myaccount.google.com/?utm_source%3Dsign_in_no_continue%26pli%3D1&dsh=S-519830656:1762683273993923&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&service=accountsettings&TL=ANzgctTgOKhxH6fe4-oM74jOm1ONVVfi6Wcg1SlmK-emM0FnfoAuyhzlAbMu6BFh">Create account?</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="formstyle.css">
+    </head>
+    <body>
+        <div class="Container">
+            <form action="https://eventdecision.com/wp-content/uploads/2023/09/thank-you.jpg" method="get">
+                <h2>
+                    Registration Details
+                </h2>
+                <div class="input-box">
+                    <label>Name </label>
+                    <input type="text" placeholder="Name" pattern="[A-Za-z]{3,30}" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+
+                <div class="input-box">
+                    <label>Gender </label>
+                    <div class="gender-options">
+                        <input type="radio" name="Gender">Male
+                        
+                        <input type="radio" name="Gender">Female
+                        
+                    </div>
+                </div>    
+
+                <div class="input-box">
+                    <label>Email </label>
+                    <input type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <label>Password </label>
+                    <input type="password" placeholder="Password" pattern=".{6,}" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+
+                <div class="input-box">
+                    <label id="dept">Department </label>
+                    <select id="dept">
+                        <option>Computer Science</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Electrical Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Computer Science</option>
+
+                    </select>
+                </div>
+
+            
+                <div class="input-box">
+                    <label>Date Of Birth </label>
+                    <input type="text" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[0-2])[\/](19|20)\d\d$" required>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+            
+                <div class="input-box">
+                    <label>Age </label>
+                    <input type="number" placeholder="Age" required>
+                </div>
+
+
+                <div class="input-box">
+                    <label>Contact Number</label>
+                    <input type="text"  required pattern="[0-9]{10}" maxlength="10" placeholder="Phone Number">
+                </div>
+
+                <div class="input-box">
+                    <label>Photo</label>
+                    
+                        <input type="file" accept="image/*" placeholder="Insert File">
+                    
+                </div>
+
+                <button>Submit</button>
+
+            
+            </form>
+        </div>
+    </body>
+</html>
